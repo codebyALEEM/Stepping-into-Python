@@ -15,18 +15,20 @@ gc = 0
 
 while gc < ch :
     gc += 1
-    g1 =int(input("Enter your Guess="))
-    
-    if g1 == num:
+    uguess =int(input("Enter your Guess="))
+
+    if uguess == num:
        print(f"Correct! The number is {num}.You gussed it in {gc} attempts.")
        break
     
-    elif gc >= ch and g1 != num:
+    elif gc >= ch and uguess!= num:
         print(f'Sorry! The number is {num}.')
         
-    elif g1 > num:
+    elif uguess > num:
         print('To high ! Try a lower number.')
         
-    elif g1 < num:
+    elif uguess < num:
         print('To low! Try a higher number.')
         
+        
+print("Thank you, Visit again!")
